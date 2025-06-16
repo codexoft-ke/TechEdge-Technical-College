@@ -1,0 +1,517 @@
+/* TechEdge Technical College - Modern Tech Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #0066ff;
+    --secondary-blue: #1a1a2e;
+    --accent-cyan: #00d4ff;
+    --dark-bg: #0a0a0a;
+    --card-bg: #ffffff;
+    --text-primary: #2d3748;
+    --text-secondary: #718096;
+    --border-color: #e2e8f0;
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.15);
+    --gradient-primary: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
+    --gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #0a0a0a 100%);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: var(--text-primary);
+    background: var(--gradient-dark);
+    min-height: 100vh;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header Styling */
+header {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: var(--shadow-medium);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: -0.02em;
+}
+
+.logo p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation Styling */
+nav {
+    background: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    padding: 1.2rem 2rem;
+    display: block;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: white;
+    background: rgba(0, 102, 255, 0.1);
+}
+
+nav ul li a:hover::before,
+nav ul li a.active::before {
+    width: 80%;
+}
+
+/* Main Content Styling */
+main {
+    background: var(--card-bg);
+    margin: 3rem 1.5rem;
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-heavy);
+    min-height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    opacity: 0.03;
+    transform: translate(50%, -50%);
+}
+
+h1, h2, h3 {
+    color: var(--secondary-blue);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin-top: 3rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 4px;
+    height: 2rem;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: var(--primary-blue);
+}
+
+p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--accent-cyan);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: var(--secondary-blue);
+}
+
+.service-card p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 3rem auto;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: var(--secondary-blue);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+/* Footer Styling */
+footer {
+    background: var(--secondary-blue);
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    main {
+        margin: 2rem 1rem;
+        padding: 3rem 2rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .logo p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    nav ul li a {
+        padding: 1rem 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        margin: 1rem 0.5rem;
+        padding: 2rem 1.5rem;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .service-card {
+        padding: 2rem;
+    }
+
+    .contact-form {
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    header {
+        padding: 1.5rem 0;
+    }
+    
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    main {
+        padding: 1.5rem 1rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Smooth scrolling and animations */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading animation for better UX */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+    outline: 2px solid var(--accent-cyan);
+    outline-offset: 2px;
+}
