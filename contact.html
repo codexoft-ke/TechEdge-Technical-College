@@ -4,121 +4,394 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - TechEdge Technical College</title>
+    <meta name="description" content="Get in touch with TechEdge Technical College. Apply now, schedule a campus tour, or contact our admissions team.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
 </head>
 <body>
+    <!-- Navigation -->
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <h1>TechEdge Technical College</h1>
-                    <p>Empowering Tomorrow's Tech Leaders</p>
+                <a href="index.html" class="logo">TechEdge</a>
+                
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="services.html" class="nav-link">Programs</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Apply Now</a>
+                </nav>
+                
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
     </header>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <main>
-        <div class="container">
-            <h1>Get in Touch with TechEdge</h1>
-            
-            <p>We welcome your inquiries and look forward to helping you take the next step in your educational and career journey. Whether you're interested in learning more about our programs, scheduling a campus visit, or discussing how TechEdge Technical College can help you achieve your goals, our admissions and student services teams are here to provide you with personalized assistance and guidance.</p>
-
-            <p>Our campus is conveniently located in the heart of the technology corridor, easily accessible by public transportation and with ample parking for those who prefer to drive. We encourage prospective students and their families to visit our campus to experience firsthand our state-of-the-art facilities, meet our faculty, and get a feel for the dynamic learning environment that makes TechEdge special.</p>
-
-            <h2>Contact Information</h2>
-            <p><strong>Main Campus Address:</strong><br>
-            TechEdge Technical College<br>
-            1250 Technology Boulevard<br>
-            Innovation City, TC 12345</p>
-
-            <p><strong>Phone Numbers:</strong><br>
-            Main Office: (555) 123-TECH (8324)<br>
-            Admissions: (555) 123-8325<br>
-            Student Services: (555) 123-8326<br>
-            Career Services: (555) 123-8327</p>
-
-            <p><strong>Email Addresses:</strong><br>
-            General Information: info@techedge.edu<br>
-            Admissions: admissions@techedge.edu<br>
-            Student Support: support@techedge.edu<br>
-            Corporate Training: corporate@techedge.edu</p>
-
-            <h2>Campus Hours</h2>
-            <p>Our campus facilities are open to serve students and visitors during the following hours:</p>
-            <p><strong>Monday - Thursday:</strong> 7:00 AM - 10:00 PM<br>
-            <strong>Friday:</strong> 7:00 AM - 6:00 PM<br>
-            <strong>Saturday:</strong> 8:00 AM - 4:00 PM<br>
-            <strong>Sunday:</strong> Closed</p>
-
-            <p>Please note that individual department hours may vary, and we recommend calling ahead if you need to speak with a specific faculty member or department. During holiday periods and semester breaks, our hours may be modified, and current information is always available on our website or by calling our main office.</p>
-
-            <h2>Send Us a Message</h2>
-            <p>Use the form below to send us your questions, comments, or requests for information. We strive to respond to all inquiries within 24 hours during regular business days. For urgent matters, please call our main office directly.</p>
-
-            <div class="contact-form">
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="interest">Area of Interest</label>
-                        <select id="interest" name="interest">
-                            <option value="">Please select...</option>
-                            <option value="computer-science">Computer Science & Programming</option>
-                            <option value="network-admin">Network Administration</option>
-                            <option value="cybersecurity">Cybersecurity</option>
-                            <option value="electronics">Electronics Technology</option>
-                            <option value="digital-media">Digital Media & Design</option>
-                            <option value="renewable-energy">Renewable Energy Technology</option>
-                            <option value="corporate-training">Corporate Training</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="6" required placeholder="Please share your questions or tell us how we can help you..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+    <!-- Page Content -->
+    <main class="page-content">
+        <!-- Hero Section -->
+        <section class="section-hero">
+            <div class="container">
+                <div class="hero text-center">
+                    <h1 class="hero-title">Contact Us</h1>
+                    <p class="hero-subtitle">
+                        Ready to start your tech journey? Get in touch with our admissions team 
+                        or schedule a campus visit to see what TechEdge has to offer.
+                    </p>
+                </div>
             </div>
+        </section>
 
-            <h2>Campus Visit and Information Sessions</h2>
-            <p>We strongly encourage prospective students to visit our campus and attend one of our regular information sessions. These sessions provide an excellent opportunity to learn about our programs, meet faculty and current students, tour our facilities, and get answers to your questions about admissions, financial aid, and career outcomes. Information sessions are held every Tuesday and Thursday at 6:00 PM, and Saturday mornings at 10:00 AM. No appointment is necessary, but we appreciate advance notice if you plan to attend.</p>
+        <!-- Contact Options -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: var(--space-16);">
+                    <h2 class="text-gradient">Get In Touch</h2>
+                    <p class="lead-text">Choose the best way to connect with us</p>
+                </div>
+                
+                <div class="grid grid-cols-3">
+                    <div class="card-feature">
+                        <div class="icon">📞</div>
+                        <h3>Call Us</h3>
+                        <p><strong>Admissions:</strong> (555) 123-TECH<br>
+                        <strong>Student Services:</strong> (555) 123-7829<br>
+                        <strong>Financial Aid:</strong> (555) 123-7830</p>
+                        <p style="margin-top: var(--space-4);">
+                            <strong>Hours:</strong><br>
+                            Mon-Fri: 8:00 AM - 6:00 PM<br>
+                            Saturday: 9:00 AM - 4:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+                    
+                    <div class="card-feature">
+                        <div class="icon">✉️</div>
+                        <h3>Email Us</h3>
+                        <p><strong>General Info:</strong> info@techedge.edu<br>
+                        <strong>Admissions:</strong> admissions@techedge.edu<br>
+                        <strong>Financial Aid:</strong> financialaid@techedge.edu</p>
+                        <p style="margin-top: var(--space-4);">
+                            We typically respond to emails within 24 hours during business days.
+                        </p>
+                    </div>
+                    
+                    <div class="card-feature">
+                        <div class="icon">📍</div>
+                        <h3>Visit Us</h3>
+                        <p><strong>Campus Address:</strong><br>
+                        1250 Technology Boulevard<br>
+                        Innovation City, TC 12345</p>
+                        <p style="margin-top: var(--space-4);">
+                            <strong>Campus Tours:</strong><br>
+                            Monday-Friday: 10 AM, 2 PM, 4 PM<br>
+                            Saturday: 10 AM, 12 PM<br>
+                            <em>Appointments recommended</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <p>For those who cannot attend our regular information sessions, we are happy to arrange individual campus tours and meetings with admissions counselors. Simply call our admissions office or use the contact form above to schedule your visit. We can also arrange meetings with program directors and faculty members if you have specific questions about particular academic programs or career paths.</p>
-        </div>
+        <!-- Contact Form -->
+        <section class="section bg-glass">
+            <div class="container">
+                <div class="grid grid-cols-2">
+                    <div>
+                        <h2 class="text-gradient" style="margin-bottom: var(--space-6);">Send Us a Message</h2>
+                        <p class="lead-text" style="margin-bottom: var(--space-8);">
+                            Have questions about our programs, admissions, or campus life? 
+                            Fill out the form and we'll get back to you promptly.
+                        </p>
+                        
+                        <div class="card" style="background: var(--dark-surface);">
+                            <h4>Why Contact TechEdge?</h4>
+                            <ul style="margin-top: var(--space-4); margin-left: var(--space-6);">
+                                <li>Personalized program recommendations</li>
+                                <li>Financial aid and scholarship information</li>
+                                <li>Campus tour scheduling</li>
+                                <li>Application assistance</li>
+                                <li>Career guidance and outcomes data</li>
+                                <li>Transfer credit evaluation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <form id="contactForm" style="margin: 0;">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="program" class="form-label">Program of Interest</label>
+                                <select id="program" name="program" class="form-input">
+                                    <option value="">Select a program</option>
+                                    <option value="computer-science">Computer Science & AI</option>
+                                    <option value="cybersecurity">Cybersecurity</option>
+                                    <option value="data-science">Data Science & Analytics</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="mobile-development">Mobile App Development</option>
+                                    <option value="cloud-computing">Cloud Computing</option>
+                                    <option value="robotics-iot">Robotics & IoT</option>
+                                    <option value="game-development">Game Development</option>
+                                    <option value="undecided">Undecided</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inquiryType" class="form-label">Type of Inquiry *</label>
+                                <select id="inquiryType" name="inquiryType" class="form-input" required>
+                                    <option value="">Select inquiry type</option>
+                                    <option value="admissions">Admissions Information</option>
+                                    <option value="financial-aid">Financial Aid</option>
+                                    <option value="campus-tour">Campus Tour</option>
+                                    <option value="program-details">Program Details</option>
+                                    <option value="transfer-credits">Transfer Credits</option>
+                                    <option value="career-services">Career Services</option>
+                                    <option value="general">General Information</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" 
+                                    placeholder="Tell us about your questions, goals, or what you'd like to know about TechEdge..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer;">
+                                    <input type="checkbox" id="newsletter" name="newsletter" style="margin: 0;">
+                                    <span>I'd like to receive news and updates about TechEdge programs</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus Information -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: var(--space-16);">
+                    <h2 class="text-gradient">Visit Our Campus</h2>
+                    <p class="lead-text">Experience our state-of-the-art facilities and vibrant campus community</p>
+                </div>
+                
+                <div class="grid grid-cols-2">
+                    <div class="card">
+                        <h3>Campus Facilities</h3>
+                        <ul style="margin-top: var(--space-4); margin-left: var(--space-6);">
+                            <li><strong>Innovation Lab:</strong> Cutting-edge equipment for hands-on learning</li>
+                            <li><strong>Cybersecurity Center:</strong> Dedicated space for security training and research</li>
+                            <li><strong>Computer Labs:</strong> 12 labs with latest hardware and software</li>
+                            <li><strong>Collaboration Spaces:</strong> Modern areas for team projects and study</li>
+                            <li><strong>Library & Resource Center:</strong> Digital and physical resources</li>
+                            <li><strong>Student Lounge:</strong> Relaxation and networking space</li>
+                            <li><strong>Career Services Center:</strong> Dedicated space for career planning</li>
+                            <li><strong>Food Court:</strong> Various dining options on campus</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Parking & Transportation</h3>
+                        <p style="margin-bottom: var(--space-4);">
+                            <strong>Free Student Parking:</strong> Ample parking spaces available for all students and visitors.
+                        </p>
+                        
+                        <h4>Public Transportation:</h4>
+                        <ul style="margin-top: var(--space-2); margin-left: var(--space-6);">
+                            <li>Metro Line 3 (Tech Center Station) - 5-minute walk</li>
+                            <li>Bus Routes 15, 42, 67 stop directly at campus</li>
+                            <li>Bike-friendly campus with secure bike storage</li>
+                        </ul>
+                        
+                        <div style="margin-top: var(--space-6); padding: var(--space-4); background: var(--dark-surface); border-radius: var(--radius-lg);">
+                            <h4>Campus Tour Schedule:</h4>
+                            <p><strong>Weekdays:</strong> 10:00 AM, 2:00 PM, 4:00 PM<br>
+                            <strong>Saturdays:</strong> 10:00 AM, 12:00 PM<br>
+                            <strong>Duration:</strong> 90 minutes<br>
+                            <strong>Includes:</strong> Facilities tour, program info, Q&A session</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section bg-glass">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: var(--space-16);">
+                    <h2 class="text-gradient">Frequently Asked Questions</h2>
+                    <p class="lead-text">Quick answers to common questions</p>
+                </div>
+                
+                <div class="grid grid-cols-2">
+                    <div class="card">
+                        <h4>When do classes start?</h4>
+                        <p>We offer three start dates per year: Fall (September), Spring (January), and Summer (May). Rolling admissions are available for most programs.</p>
+                        
+                        <h4 style="margin-top: var(--space-6);">Do you offer online programs?</h4>
+                        <p>Yes! Most of our programs offer hybrid options with both online and in-person components. Some programs are available fully online.</p>
+                        
+                        <h4 style="margin-top: var(--space-6);">What are the admission requirements?</h4>
+                        <p>High school diploma or equivalent, basic computer literacy, and motivation to succeed. No programming experience required for most programs.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>How long are the programs?</h4>
+                        <p>Program lengths vary from 15-24 months depending on the specialization. Most core programs are 18-20 months.</p>
+                        
+                        <h4 style="margin-top: var(--space-6);">Do you help with job placement?</h4>
+                        <p>Absolutely! We have a 95% job placement rate and offer comprehensive career services including resume help, interview prep, and job matching.</p>
+                        
+                        <h4 style="margin-top: var(--space-6);">Can I transfer credits?</h4>
+                        <p>Yes, we accept transfer credits from accredited institutions. Our admissions team will evaluate your transcripts for applicable credits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contact -->
+        <section class="section">
+            <div class="container">
+                <div class="card bg-glass text-center">
+                    <h3>Need Immediate Assistance?</h3>
+                    <p style="margin: var(--space-4) 0;">
+                        For urgent matters or immediate assistance, please call our main number during business hours 
+                        or use our emergency contact for after-hours issues.
+                    </p>
+                    <div class="flex justify-center gap-6" style="flex-wrap: wrap;">
+                        <div>
+                            <h4>Main Office</h4>
+                            <p><strong>(555) 123-TECH</strong><br>
+                            Mon-Fri: 8 AM - 6 PM</p>
+                        </div>
+                        <div>
+                            <h4>Emergency Contact</h4>
+                            <p><strong>(555) 123-7911</strong><br>
+                            After hours & weekends</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 TechEdge Technical College. All rights reserved. | Empowering minds, building futures.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechEdge Technical College</h4>
+                    <p>Empowering tomorrow's tech leaders through innovative education, hands-on experience, and industry partnerships.</p>
+                    <p><strong>Address:</strong><br>1250 Technology Boulevard<br>Innovation City, TC 12345</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Programs</a></li>
+                        <li><a href="contact.html">Admissions</a></li>
+                        <li><a href="contact.html">Campus Tour</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="services.html">Computer Science & AI</a></li>
+                        <li><a href="services.html">Cybersecurity</a></li>
+                        <li><a href="services.html">Data Science</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><strong>Phone:</strong> (555) 123-TECH</p>
+                    <p><strong>Email:</strong> info@techedge.edu</p>
+                    <p><strong>Hours:</strong><br>Mon-Fri: 8AM-6PM<br>Sat: 9AM-4PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechEdge Technical College. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Header scroll effect
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // Contact form handling
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const inquiryType = document.getElementById('inquiryType').value;
+            const message = document.getElementById('message').value;
+            
+            if (!firstName || !lastName || !email || !inquiryType || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            contactForm.reset();
+        });
+    </script>
 </body>
 </html>

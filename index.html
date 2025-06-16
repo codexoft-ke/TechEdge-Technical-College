@@ -3,56 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - TechEdge Technical College</title>
+    <title>TechEdge Technical College - Empowering Tomorrow's Tech Leaders</title>
+    <meta name="description" content="Leading technical college offering cutting-edge programs in computer science, cybersecurity, AI, and more. Start your tech career today.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
 </head>
 <body>
+    <!-- Navigation -->
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <h1>TechEdge Technical College</h1>
-                    <p>Empowering Tomorrow's Tech Leaders</p>
+                <a href="index.html" class="logo">TechEdge</a>
+                
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="services.html" class="nav-link">Programs</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Apply Now</a>
+                </nav>
+                
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
     </header>
 
-    <nav>
+    <!-- Hero Section -->
+    <section class="section-hero">
         <div class="container">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <div class="hero animate-fade-in-up">
+                <h1 class="hero-title">Shape Your Future in Technology</h1>
+                <p class="hero-subtitle">
+                    Join thousands of successful graduates who started their tech careers at TechEdge. 
+                    We offer cutting-edge programs, industry partnerships, and hands-on experience that 
+                    prepares you for tomorrow's challenges.
+                </p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        Get Started Today
+                    </a>
+                    <a href="about.html" class="btn btn-outline btn-lg">
+                        Learn More
+                    </a>
+                </div>
+            </div>
         </div>
-    </nav>
+    </section>
 
-    <main>
+    <!-- Stats Section -->
+    <section class="section">
         <div class="container">
-            <h1>Welcome to TechEdge Technical College</h1>
-            
-            <p>Welcome to TechEdge Technical College, where innovation meets education and dreams become reality. For over two decades, we have been at the forefront of technical education, preparing students for successful careers in the rapidly evolving technology industry. Our institution stands as a beacon of excellence, combining cutting-edge curriculum with hands-on learning experiences that prepare our graduates for the challenges of tomorrow's workplace.</p>
-
-            <p>At TechEdge, we believe that technical education should be more than just theoretical knowledge. Our comprehensive programs are designed to bridge the gap between academic learning and real-world application. We offer state-of-the-art laboratories, modern equipment, and industry-standard software that mirror the actual working environments our students will encounter in their professional careers. This practical approach ensures that our graduates are not just educated but are also immediately productive members of the workforce.</p>
-
-            <p>Our distinguished faculty consists of industry professionals and academic experts who bring years of practical experience into the classroom. They are committed to providing personalized attention to each student, ensuring that individual learning needs are met and potential is maximized. With small class sizes and a student-to-instructor ratio that promotes meaningful interaction, we create an environment where every student can thrive and excel.</p>
-
-            <h2>Why Choose TechEdge?</h2>
-            
-            <p>TechEdge Technical College offers more than just education; we provide a pathway to success. Our career services department works tirelessly to connect our students and graduates with top employers in the technology sector. We maintain strong partnerships with leading companies, ensuring that our curriculum remains current with industry demands and that our students have access to internship and job placement opportunities.</p>
-
-            <p>Our campus features modern facilities including advanced computer labs, electronics workshops, networking laboratories, and collaborative learning spaces designed to foster creativity and innovation. We understand that learning extends beyond the classroom, which is why we provide comprehensive student support services including academic tutoring, career counseling, and financial aid assistance to help students overcome any obstacles on their path to success.</p>
-
-            <p>Whether you're a recent high school graduate looking to start your career in technology, a working professional seeking to upgrade your skills, or someone considering a career change, TechEdge Technical College has the programs and support systems to help you achieve your goals. Join our community of learners and become part of a network that will support you throughout your career journey.</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Job Placement Rate</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15K+</span>
+                    <span class="stat-label">Graduates</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Industry Partners</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Years of Excellence</span>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
 
+    <!-- Programs Preview -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--space-16);">
+                <h2 class="text-gradient">Leading Tech Programs</h2>
+                <p class="lead-text">
+                    Discover our comprehensive range of cutting-edge programs designed to prepare you 
+                    for high-demand careers in technology.
+                </p>
+            </div>
+            
+            <div class="features">
+                <div class="card-feature">
+                    <div class="icon">💻</div>
+                    <h3>Computer Science & AI</h3>
+                    <p>Master programming, algorithms, and artificial intelligence with comprehensive training in Python, Java, machine learning, and cloud computing.</p>
+                </div>
+                
+                <div class="card-feature">
+                    <div class="icon">🔒</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Protect digital assets and infrastructure through ethical hacking, network security, digital forensics, and risk management expertise.</p>
+                </div>
+                
+                <div class="card-feature">
+                    <div class="icon">📊</div>
+                    <h3>Data Science & Analytics</h3>
+                    <p>Transform data into actionable insights using statistical analysis, machine learning, big data technologies, and business intelligence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--space-16);">
+                <h2 class="text-gradient">Why Choose TechEdge?</h2>
+                <p class="lead-text">
+                    We're committed to your success with industry-leading programs, 
+                    expert faculty, and comprehensive career support.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">🏢 Industry-Connected Learning</h3>
+                    </div>
+                    <p>Our curriculum is developed in partnership with leading tech companies, ensuring you learn the most current technologies and practices used in the industry today.</p>
+                    <ul style="margin-top: var(--space-4); padding-left: var(--space-6);">
+                        <li>Corporate partnerships with Google, Microsoft, Amazon, IBM</li>
+                        <li>Guaranteed internship placement with industry partners</li>
+                        <li>95% job placement rate with dedicated career services</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">🔬 Hands-On Experience</h3>
+                    </div>
+                    <p>Learn by doing with real projects, cutting-edge labs, and collaborative team environments that simulate actual tech workplace scenarios.</p>
+                    <ul style="margin-top: var(--space-4); padding-left: var(--space-6);">
+                        <li>State-of-the-art computer labs and simulation environments</li>
+                        <li>Work on live client projects and build professional portfolios</li>
+                        <li>Expert mentorship from industry professionals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-glass">
+        <div class="container text-center">
+            <h2 class="display-text" style="margin-bottom: var(--space-6);">Ready to Start Your Tech Journey?</h2>
+            <p class="lead-text" style="margin-bottom: var(--space-8);">Join thousands of successful graduates and transform your career with our cutting-edge programs.</p>
+            <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
+                <a href="services.html" class="btn btn-primary btn-lg">View All Programs</a>
+                <a href="contact.html" class="btn btn-secondary btn-lg">Schedule Campus Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 TechEdge Technical College. All rights reserved. | Empowering minds, building futures.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechEdge Technical College</h4>
+                    <p>Empowering tomorrow's tech leaders through innovative education, hands-on experience, and industry partnerships.</p>
+                    <p><strong>Address:</strong><br>1250 Technology Boulevard<br>Innovation City, TC 12345</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Programs</a></li>
+                        <li><a href="contact.html">Admissions</a></li>
+                        <li><a href="contact.html">Campus Tour</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="services.html">Computer Science & AI</a></li>
+                        <li><a href="services.html">Cybersecurity</a></li>
+                        <li><a href="services.html">Data Science</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><strong>Phone:</strong> (555) 123-TECH</p>
+                    <p><strong>Email:</strong> info@techedge.edu</p>
+                    <p><strong>Hours:</strong><br>Mon-Fri: 8AM-6PM<br>Sat: 9AM-4PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechEdge Technical College. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Header scroll effect
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add animation classes when elements come into view
+        const animatedElements = document.querySelectorAll('.animate-fade-in-up, .animate-float');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+        
+        animatedElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
